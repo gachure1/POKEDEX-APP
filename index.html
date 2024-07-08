@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokedex</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100">
+  <header class="bg-red-500 text-white p-4 text-center">
+    <h1 class="text-3xl font-bold">Pokedex</h1>
+  </header>
+  <main class="container mx-auto p-4">
+    <section id="search" class="mb-4">
+      <input type="text" id="search-input" class="p-2 border border-gray-300 rounded" placeholder="Search Pokémon by name or ID">
+      <button id="search-button" class="p-2 bg-blue-500 text-white rounded">Search</button>
+    </section>
+    <section id="filter" class="mb-4">
+      <select id="type-filter" class="p-2 border border-gray-300 rounded">
+        <option value="">All Types</option>
+        <option value="grass">Grass</option>
+        <option value="fire">Fire</option>
+        <!-- Add other types as needed -->
+      </select>
+    </section>
+    <section id="pokemon-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <!-- Pokémon cards will be displayed here -->
+    </section>
+    <section id="navigation" class="mt-4">
+      <button id="prev" class="p-2 bg-gray-500 text-white rounded">Previous</button>
+      <button id="next" class="p-2 bg-gray-500 text-white rounded">Next</button>
+    </section>
+    <section id="evolution-chain" class="mt-4">
+      <!-- Evolution chain will be displayed here -->
+    </section>
+    <section id="related-pokemon" class="mt-4">
+      <!-- Related Pokémon will be displayed here -->
+    </section>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
